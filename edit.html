@@ -7,7 +7,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Us</title>
+    <title>Edit Contact</title>
 
     <!-- CSS Section -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -21,8 +21,8 @@
 
 </header>
 
-<div class="container">
-    <h1>Contact Us</h1>
+<main class="container">
+    <h1>Edit Contact</h1>
 
     <div id="messageArea"></div>
 
@@ -44,25 +44,14 @@
                 <input id="emailAddress" name="emailAddress" type="email" class="form-control"
                 aria-describedby="Email Address" aria-label="Email Address Input" required>
             </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text">Your Message</span>
-                <input id="message" name="message" type="text" class="form-control"
-                aria-describedby="Message Area" aria-label="Message Area Input" required>
-            </div>
-            <div class="input-group mb-3">
-                <input id="subscribeCheckbox" name="subscribeCheckbox" type="checkbox" class="form-check-input">
-                <label class="form-check-label" for="subscribeCheckbox">Subscribe to our contact List</label>
-            </div>
-            <button id="submitButton" type="submit" class="btn btn-primary"><i class="fa-solid fa-envelope"></i>Submit</button>
+
+            <button id="editButton" type="submit" class="btn btn-primary"><i class="fas fa-edit fa-lg"></i>Edit</button>
             <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fa-solid fa-rotate-left"></i>Cancel</button>
         </form>
 
-        <div class="col-lg-4-col-md-4">
-            <a href="contact-list.html" class="btn btn-primary"><i class="fa-solid fa-users"></i>Show Contact List</a>
-        </div>
 
     </div>
-</div>
+</main>
 
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
