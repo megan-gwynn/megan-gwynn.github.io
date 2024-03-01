@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Megan Gagliardi">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery</title>
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./content/app.css">
+    <link rel="stylesheet" href="content/style.css">
+</head>
+<body>
+
+<header></header>
+
+<!-- Gallery -->
+<div class="row">
+    <div class="col">
+        <img src="./images/mario-day.jpg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Join us in celebrating Mario Day 2024." />
+    </div>
+    <div class="col">
+        <img src="./images/after-school-pokemon-club.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Join the Pokemon Club for their monthly meeting." />
+    </div>
+    <div class="col">
+        <img src="./images/halo-world-championship-2024.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Join us as we'll be streaming the HCS live." />
+    </div>
+</div>
+
+<!-- lightbox -->
+
+<div id="Lightbox" class="modal">
+    <span class="close pointer" onclick="closeLightbox()">&times;</span>
+    <div class="modal-content">
+        <div class="slide">
+            <img src="./images/mario-day.jpg" class="image-slide" alt="Join us in celebrating Mario Day 2024." />
+        </div>
+        <div class="slide">
+            <img src="./images/after-school-pokemon-club.jpg" class="image-slide" alt="Join the Pokemon Club for their monthly meeting." />
+        </div>
+        <div class="slide">
+            <img src="./images/halo-world-championship-2024.jpg" class="image-slide" alt="Join us as we'll be streaming the HCS live." />
+        </div>
+
+        <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+        <div class="dots">
+            <div class="col">
+                <img src="./images/mario-day.jpg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Join us in celebrating Mario Day 2024." />
+            </div>
+            <div class="col">
+                <img src="./images/after-school-pokemon-club.jpg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Join the Pokemon Club for their monthly meeting." />
+            </div>
+            <div class="col">
+                <img src="./images/halo-world-championship-2024.jpg" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Join us as we'll be streaming the HCS live." />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer nav bar -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <div class="container">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="privacypolicy.html">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="termsofservice.html">Terms of Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./scripts/main.js"></script>
+<script src="scripts/gallery.js"></script>
+
+</body>
+</html>

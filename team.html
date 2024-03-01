@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Megan Gagliardi">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Team</title>
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./content/app.css">
+
+    <style>
+        .team-member {
+            text-align: center;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .team-member img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+
+</header>
+
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Team Member 1 -->
+        <div class="col-md-4">
+            <div class="team-member" data-toggle="modal" data-target="#memberModal1">
+                <img src="images/9217625.png" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>Web Developer</p>
+            </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="col-md-4">
+            <div class="team-member" data-toggle="modal" data-target="#memberModal2">
+                <img src="images/9217625.png" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Graphic Designer</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Team Member Modals -->
+<!-- Team Member 1 Modal -->
+<div class="modal fade" id="memberModal1" tabindex="-1" role="dialog" aria-labelledby="memberModal1Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="memberModal1Label">John Doe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="images/9217625.png" alt="John Doe" class="img-fluid mb-3">
+                <p><strong>Role:</strong> Web Developer</p>
+                <p><strong>About:</strong> John is a skilled web developer with expertise in front-end technologies</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team Member 2 Modal -->
+<div class="modal fade" id="memberModal2" tabindex="-1" role="dialog" aria-labelledby="memberModal2Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="memberModal2Label">Jane Smith</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="images/9217625.png" alt="Jane Smith" class="img-fluid mb-3">
+                <p><strong>Role:</strong> Graphic Designer</p>
+                <p><strong>About:</strong> Jane is a skilled graphic designer with 10 years of experience</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer nav bar -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <div class="container">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="privacypolicy.html">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="termsofservice.html">Terms of Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Megan Gagliardi">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Services</title>
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./content/app.css">
+
+    <style>
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+
+</header>
+
+<div class="container mt-5">
+    <!-- Service Tabs -->
+    <ul class="nav nav-tabs" id="servicesTabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="service1-tab" data-toggle="tab" href="#service1" role="tab" aria-controls="service1" aria-selected="true">
+                <img src="images/migrating.png" alt="Service 1" class="service-icon">
+                Service 1
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="service2-tab" data-toggle="tab" href="#service2" role="tab" aria-controls="service2" aria-selected="false">
+                <img src="images/social-services.png" alt="Service 2" class="service-icon">
+                Service 2
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="service3-tab" data-toggle="tab" href="#service3" role="tab" aria-controls="service3" aria-selected="false">
+                <img src="images/shopping-cart.png" alt="Service 3" class="service-icon">
+                Service 3
+            </a>
+        </li>
+    </ul>
+
+    <!-- Service Tab Content -->
+    <div class="tab-content mt-3">
+        <!-- Service 1 Content -->
+        <div class="tab-pane fade show active" id="service1" role="tabpanel" aria-labelledby="service1-tab">
+            <h2>Service 1</h2>
+            <p>Details about Service 1.</p>
+        </div>
+
+        <!-- Service 2 Content -->
+        <div class="tab-pane fade" id="service2" role="tabpanel" aria-labelledby="service2-tab">
+            <h2>Service 2</h2>
+            <p>Details about Service 2.</p>
+        </div>
+
+        <!-- Service 3 Content -->
+        <div class="tab-pane fade" id="service3" role="tabpanel" aria-labelledby="service3-tab">
+            <h2>Service 3</h2>
+            <p>Details about Service 3.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer nav bar -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <div class="container">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="privacypolicy.html">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="termsofservice.html">Terms of Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
