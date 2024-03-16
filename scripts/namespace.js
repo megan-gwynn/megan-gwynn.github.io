@@ -1,3 +1,3 @@
-"use strict";
+namespace core {
 
-let core;
+}

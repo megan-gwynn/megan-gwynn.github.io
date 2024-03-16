@@ -1,0 +1,48 @@
+<h1 class="mb-5">Contact Us</h1>
+
+<div id="messageArea"></div>
+
+<div class="row justify-content-lg-center g-3">
+
+    <form class="col-lg-6 col-md-10 col-sm-10">
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Full Name</span>
+            <input id="fullName" name="fullName" type="text" class="form-control"
+                   aria-describedby="Full Name" aria-label="Full Name Input" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Contact Number</span>
+            <input id="contactNumber" name="contactNumber" type="tel" class="form-control"
+                   aria-describedby="Contact Number" aria-label="Contact Number Input" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Email</span>
+            <input id="emailAddress" name="emailAddress" type="email" class="form-control"
+                   aria-describedby="Email Address" aria-label="Email Address Input" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Your Message</span>
+            <textarea id="message" name="message" class="form-control"
+                      aria-describedby="Message Area" aria-label="Message Area Input" required></textarea>
+        </div>
+
+        <div class="input-group mb-3">
+            <input id="subscribeCheckbox" name="subscribeCheckbox" type="checkbox" class="form-check-input">
+            <label class="form-check-label" for="subscribeCheckbox">Subscribe to our contact list</label>
+        </div>
+
+        <button id="sendButton" type="submit" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Submit</button>
+        <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fa-solid fa-rotate-left"></i> Cancel</button>
+
+    </form>
+
+    <div class="col-lg-4 col-md-4">
+        <a data="contact-list" class="btn btn-primary"><i class="fa-solid fa-users"></i> Show Contact List</a>
+    </div>
+
+
+</div>
